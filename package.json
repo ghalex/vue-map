@@ -3,15 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "d3-array": "^2.8.0",
+    "d3-geo": "^2.0.1",
+    "d3-interpolate": "^2.0.1",
+    "d3-request": "^1.0.6",
+    "d3-scale": "^3.2.3",
+    "d3-scale-chromatic": "^2.0.0",
+    "d3-selection": "^2.0.0",
+    "d3-zoom": "^2.0.0",
+    "tailwindcss": "^1.9.6",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-rc.2"
   },
   "devDependencies": {
+    "@types/d3-array": "^2.7.0",
+    "@types/d3-geo": "^2.0.0",
+    "@types/d3-request": "^1.0.6",
+    "@types/d3-scale": "^3.2.1",
+    "@types/d3-zoom": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
