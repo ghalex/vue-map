@@ -3,7 +3,7 @@ import { group } from 'd3-array'
 
 export const fetchShapes = () => {
   return new Promise((resolve, reject) => {
-    json('/data/counties.json', (err, data) => {
+    json('/data/romania.json', (err, data) => {
       if (err) {
         reject(err)
       } else {

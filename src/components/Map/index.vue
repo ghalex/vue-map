@@ -16,7 +16,7 @@ import { select } from 'd3-selection'
 import { scaleSequential } from 'd3-scale'
 import { interpolateHcl } from 'd3-interpolate'
 import { extent } from 'd3-array'
-import { interpolateWarm } from 'd3-scale-chromatic'
+// import { interpolateWarm } from 'd3-scale-chromatic'
 import { fetchData, fetchShapes } from '@/data'
 
 export const svgRef = ref(null)
