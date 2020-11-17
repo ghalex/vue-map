@@ -106,7 +106,7 @@ export default {
   position: relative;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
-  background-image: url('~../../assets/bg.jpg');
+  //background-image: url('~../../assets/bg.jpg');
   border-radius: 16px;
 }
 
