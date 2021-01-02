@@ -13,13 +13,14 @@ export const fetchShapes = () => {
   })
 }
 
-export const fetchData = () => {
+export const fetchData = (): Promise<Map<string, any>> => {
   return new Promise((resolve, reject) => {
     csv('/data/data.csv', (err, data) => {
       if (err) {
         reject(err)
       } else {
-        resolve(group(data, (d) => d.code))
+        const result = group(data, (d) => d.code) as Map<string, any>
+        resolve(result)
       }
     })
   })

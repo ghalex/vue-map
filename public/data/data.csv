@@ -1,5 +1,43 @@
-code,name,value
-B,Alex,500
-B,Toma, 300
-TM,Alex, 300
-TM,Toma, 400
+code,name,monumente
+B,Bucuresti,2669
+AB,Alba,686
+AR,Arad,419
+AG,Arges,1022
+BC,Bacau,366
+BH,Bihor,456
+BN,Bistrita-Nasaud,769
+BT,Botosani,510
+BV,Brasov,986
+BR,Braila,180
+BZ,Buzau,869
+CS,Caras-Severin,832
+CJ,Cluj,1791
+CT,Constanta,594
+CV,Covasna,594
+CL,Calarasi,284
+DJ,Dolj,700
+DB,Dambovita,1237
+GL,Galati,263
+GR,Giurgiu,540
+GJ,Gorj,503
+HR,Harghita,743
+HD,Hunedoara,526
+IL,Ialomita,227
+IS,Iasi,1637
+IF,Ilfov,729
+MM,Maramures,610
+MH,Mehedinti,570
+MS,Mures,1018
+NT,Neamt,540
+OT,Olt,759
+PH,Prahova,1074
+SM,Satu Mare,310
+SB,Sibiu,1054
+SV,Suceava,519
+SJ,Salaj,546
+TR,Teleorman,393
+TM,Timis,339
+TL,Tulcea,574
+VS,Vaslui,438
+VN,Vrancea,427
+VL,Valcea,793
