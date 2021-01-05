@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="flex justify-center p-8">
+    <div class="flex flex-col items-center justify-center p-8">
+      <div>
+        <h2 class="text-4xl mb-2 text-gray-800">Monumente Romania</h2>
+      </div>
       <div class="map-container">
         <Map :width="width" :fill="getFill">
           <template #widgets>
@@ -18,6 +21,12 @@
             </div>
           </template>
         </Map>
+      </div>
+      <div class="mt-2">
+        Data source:
+        <a class="text-orange-600" href="https://ro.wikipedia.org/wiki/Lista_monumentelor_istorice_din_Rom%C3%A2nia"
+          >Wikipedia</a
+        >
       </div>
     </div>
   </div>
