@@ -7,10 +7,11 @@
       left: mousePos.x + 'px'
     }"
   >
-    <div>
-      <b>{{ mouseData.name }}</b>
-      <div>{{ value }}</div>
-    </div>
+    <slot :data="mouseData">
+      <div>
+        <b>{{ mouseData.name }}</b>
+      </div>
+    </slot>
   </div>
 </template>
 

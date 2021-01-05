@@ -5,7 +5,12 @@
         <Map :width="width" :fill="getFill">
           <template #widgets>
             <ZoomWidget />
-            <TooltipWidget />
+            <TooltipWidget #default="{ data: { name, code } }">
+              <div>
+                <b>{{ name }}</b>
+                <div>monumente: {{ data.get(code)[0].monumente }}</div>
+              </div>
+            </TooltipWidget>
           </template>
         </Map>
       </div>
@@ -48,9 +53,10 @@ export default {
 
     onMounted(async () => {
       data.value = await fetchData()
+      console.log(data.value)
     })
 
-    return { width, getFill }
+    return { width, data, getFill }
   }
 }
 </script>
