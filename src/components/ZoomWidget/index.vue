@@ -10,6 +10,7 @@
 <script lang="ts">
 import { useMap } from '@/hooks'
 import { select } from 'd3-selection'
+import { easeExpOut } from 'd3-ease'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
@@ -26,7 +27,13 @@ export default defineComponent({
     function zoomBy(val: number) {
       if (svg.value) {
         const el = select(svg.value) as any
-        zm.scaleBy(el.transition().duration(100), val)
+        zm.scaleBy(
+          el
+            .transition()
+            .ease(easeExpOut)
+            .duration(50),
+          val
+        )
       }
     }
 

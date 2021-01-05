@@ -8,7 +8,7 @@
     }"
   >
     <div>
-      <b>{{ label }}</b>
+      <b>{{ mouseData.name }}</b>
       <div>{{ value }}</div>
     </div>
   </div>
@@ -21,9 +21,9 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'Tooltip',
   setup() {
-    const { mousePos, isMouseOver } = useMap()
+    const { mousePos, mouseData, isMouseOver } = useMap()
 
-    return { mousePos, isMouseOver }
+    return { mousePos, mouseData, isMouseOver }
   }
 })
 </script>

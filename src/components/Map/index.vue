@@ -6,16 +6,32 @@
           v-for="(p, i) in paths"
           :key="i"
           class="map-region"
-          @mousemove="onMouseMove"
-          @mouseout="onMouseOut"
-          :transform="transform"
+          @mouseover="(e) => onMouseOver(e, p.properties)"
+          @mousemove="(e) => onMouseMove(e, p.properties)"
+          @mouseout="(e) => onMouseOut(e, p.properties)"
         >
-          <path :d="p.d" :fill="p.fill" class="map-shape" />
-          <text :x="p.x" :y="p.y + 3" font-size="11" text-anchor="middle" class="map-text" fill="black">
-            {{ p.code }}
+          <path :d="p.d" :fill="p.fill" class="map-shape" :transform="transform" />
+          <text
+            :x="p.x"
+            :y="p.y + 3"
+            font-size="11"
+            text-anchor="middle"
+            class="map-text"
+            fill="black"
+            :transform="transform"
+          >
+            {{ p.properties.code }}
           </text>
-          <text :x="p.x" :y="p.y + 9" font-size="6" text-anchor="middle" class="map-text" fill="black">
-            {{ p.label }}
+          <text
+            :x="p.x"
+            :y="p.y + 9"
+            font-size="6"
+            text-anchor="middle"
+            class="map-text"
+            fill="black"
+            :transform="transform"
+          >
+            {{ p.properties.name }}
           </text>
         </g>
       </g>
@@ -30,8 +46,8 @@
 import { computed, onMounted, provide, ref, watch } from 'vue'
 import { geoMercator, geoPath } from 'd3-geo'
 import { fetchShapes } from '@/data'
-import { useMouse, useZoom } from '@/hooks'
 import { pointer } from 'd3-selection'
+import { useZoom } from '@/hooks'
 
 export default {
   name: 'Map',
@@ -53,9 +69,9 @@ export default {
     const svg = ref(null)
     const shapes = ref([] as any)
     const { zm, transform } = useZoom(svg)
-    const { mousePos, isMouseOver } = useMouse(svg)
-    // const mousePos = ref({ x: 0, y: 0 })
-    // const isMouseOver = ref(false)
+    const mousePos = ref({ x: 0, y: 0 })
+    const mouseData = ref({})
+    const isMouseOver = ref(false)
     const projection = ref<any>(null)
 
     const paths = computed(() => {
@@ -71,15 +87,16 @@ export default {
           fill: props.fill(s),
           x: path.centroid(s)[0],
           y: s.properties.code !== 'IF' ? path.centroid(s)[1] : path.centroid(s)[1] - 10,
-          code: s.properties.code,
-          label: s.properties.code !== 'B' ? s.properties.name : ''
+          properties: s.properties
         }
       })
     })
 
     provide('svg', svg)
     provide('zm', zm)
+
     provide('mousePos', mousePos)
+    provide('mouseData', mouseData)
     provide('isMouseOver', isMouseOver)
 
     function updateProjection(w, h) {
@@ -90,12 +107,16 @@ export default {
     }
 
     function onMouseMove(e: any) {
-      //isMouseOver.value = true
-      //mousePos.value = { x: e.clientX, y: e.clientY }
+      mousePos.value = { x: pointer(e)[0], y: pointer(e)[1] }
     }
 
     function onMouseOut() {
-      //isMouseOver.value = false
+      isMouseOver.value = false
+    }
+
+    function onMouseOver(_, data: any) {
+      isMouseOver.value = true
+      mouseData.value = data
     }
 
     onMounted(async () => {
@@ -107,7 +128,7 @@ export default {
       updateProjection(props.width, props.height)
     })
 
-    return { svg, paths, transform, onMouseMove, onMouseOut }
+    return { svg, paths, transform, onMouseMove, onMouseOut, onMouseOver }
   }
 }
 </script>
