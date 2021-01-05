@@ -1,15 +1,15 @@
 <template>
   <div
     class="widget-tooltip"
-    v-if="isMouseOver"
+    v-if="data"
     :style="{
-      top: mousePos.y - 10 + 'px',
-      left: mousePos.x + 'px'
+      top: pos.y - 15 + 'px',
+      left: pos.x + 'px'
     }"
   >
-    <slot :data="mouseData">
+    <slot :data="data">
       <div>
-        <b>{{ mouseData.name }}</b>
+        <b>{{ data.name }}</b>
       </div>
     </slot>
   </div>
@@ -17,14 +17,14 @@
 
 <script>
 import { useMap } from '@/hooks'
-import { defineComponent } from 'vue'
+import { defineComponent, watch } from 'vue'
 
 export default defineComponent({
   name: 'Tooltip',
   setup() {
-    const { mousePos, mouseData, isMouseOver } = useMap()
+    const { mouseClickPos, clickData, isMouseOver } = useMap()
 
-    return { mousePos, mouseData, isMouseOver }
+    return { pos: mouseClickPos, data: clickData, isMouseOver }
   }
 })
 </script>

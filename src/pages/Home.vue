@@ -11,6 +11,11 @@
                 <div>monumente: {{ data.get(code)[0].monumente }}</div>
               </div>
             </TooltipWidget>
+            <div class="legend">
+              <div class="legend-item" v-for="(item, i) in legend" :key="i">
+                <span :style="{ backgroundColor: item.color }" /> {{ item.values[0] }} - {{ item.values[1] }}
+              </div>
+            </div>
           </template>
         </Map>
       </div>
@@ -19,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { Map, ZoomWidget, TooltipWidget } from '@/components'
 import { scaleQuantize } from 'd3-scale'
 import { fetchData } from '@/data'
@@ -31,17 +36,29 @@ export default {
   setup() {
     const width = ref(800)
     const data = ref<Map<string, any> | null>(null)
+    const colors = ['#FFAD00', '#FF8D00', '#00AAFC', '#00AC9D']
+    const scale = scaleQuantize()
+      .domain([0, 1600])
+      .range(colors as any)
+
+    const legend = computed(() => {
+      const intervals = [0, ...scale.thresholds(), 3000]
+      const res = [] as any[]
+
+      for (let i = 0; i < colors.length; i++) {
+        res.push({
+          color: colors[i],
+          values: [intervals[i], intervals[i + 1]]
+        })
+      }
+
+      return res
+    })
 
     function getFill({ properties }) {
       if (!data.value) {
         return '#CCC'
       }
-
-      const colors = ['#FFAD00', '#FF8D00', '#00AAFC', '#00AC9D']
-      //const domain = extent(Array.from(data.value.values()).map((x) => parseInt(x[0].monumente))) as [number, number]
-      const scale = scaleQuantize()
-        .domain([0, 1600])
-        .range(colors as any)
 
       const extra = data.value.get(properties.code)
       if (extra) {
@@ -53,10 +70,9 @@ export default {
 
     onMounted(async () => {
       data.value = await fetchData()
-      console.log(data.value)
     })
 
-    return { width, data, getFill }
+    return { width, data, getFill, legend }
   }
 }
 </script>
@@ -70,5 +86,21 @@ h3 {
   position: relative;
   border: 1px solid #ccc;
   background-color: #ededed;
+}
+
+.legend {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin: 12px 12px;
+  .legend-item {
+    padding: 0 12px;
+
+    span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+    }
+  }
 }
 </style>

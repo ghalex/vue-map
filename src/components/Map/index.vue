@@ -1,6 +1,6 @@
 <template>
   <div class="map">
-    <svg :width="width" :height="height" ref="svg">
+    <svg :width="width" :height="height" ref="svg" @click="onClickOutside">
       <g>
         <g
           v-for="(p, i) in paths"
@@ -9,6 +9,7 @@
           @mouseover="(e) => onMouseOver(e, p.properties)"
           @mousemove="(e) => onMouseMove(e, p.properties)"
           @mouseout="(e) => onMouseOut(e, p.properties)"
+          @click.stop="(e) => onMouseClick(e, p.properties)"
         >
           <path :d="p.d" :fill="p.fill" class="map-shape" :transform="transform" />
           <text
@@ -46,8 +47,8 @@
 import { computed, onMounted, provide, ref, watch } from 'vue'
 import { geoMercator, geoPath } from 'd3-geo'
 import { fetchShapes } from '@/data'
-import { pointer } from 'd3-selection'
-import { useZoom } from '@/hooks'
+import { pointer, select } from 'd3-selection'
+import { zoom } from 'd3-zoom'
 
 export default {
   name: 'Map',
@@ -68,10 +69,12 @@ export default {
   setup(props) {
     const svg = ref(null)
     const shapes = ref([] as any)
-    const { zm, transform } = useZoom(svg)
+    const transform = ref('')
     const mousePos = ref({ x: 0, y: 0 })
-    const mouseData = ref({})
+    const mouseClickPos = ref({ x: 0, y: 0 })
     const isMouseOver = ref(false)
+    const hoverData = ref(null)
+    const clickData = ref(null)
     const projection = ref<any>(null)
 
     const paths = computed(() => {
@@ -92,12 +95,22 @@ export default {
       })
     })
 
+    const zm: any = zoom()
+      .scaleExtent([0, 8])
+      .on('zoom', (e) => {
+        const { x, y, k } = e.transform
+        transform.value = `translate(${x}, ${y}) scale(${k})`
+        clickData.value = null
+      })
+
     provide('svg', svg)
     provide('zm', zm)
 
     provide('mousePos', mousePos)
-    provide('mouseData', mouseData)
+    provide('mouseClickPos', mouseClickPos)
     provide('isMouseOver', isMouseOver)
+    provide('hoverData', hoverData)
+    provide('clickData', clickData)
 
     function updateProjection(w, h) {
       projection.value = geoMercator()
@@ -112,11 +125,21 @@ export default {
 
     function onMouseOut() {
       isMouseOver.value = false
+      hoverData.value = null
     }
 
     function onMouseOver(_, data: any) {
       isMouseOver.value = true
-      mouseData.value = data
+      hoverData.value = data
+    }
+
+    function onMouseClick(e: any, data: any) {
+      clickData.value = data
+      mouseClickPos.value = { x: pointer(e)[0], y: pointer(e)[1] }
+    }
+
+    function onClickOutside() {
+      clickData.value = null
     }
 
     onMounted(async () => {
@@ -128,7 +151,13 @@ export default {
       updateProjection(props.width, props.height)
     })
 
-    return { svg, paths, transform, onMouseMove, onMouseOut, onMouseOver }
+    watch(svg, () => {
+      if (svg.value) {
+        zm(select(svg.value))
+      }
+    })
+
+    return { svg, paths, transform, onMouseMove, onMouseOut, onMouseOver, onMouseClick, onClickOutside }
   }
 }
 </script>
