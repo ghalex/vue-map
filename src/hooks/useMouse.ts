@@ -7,7 +7,6 @@ export default (elRef: Ref<any>) => {
 
   function onMouseOut(_, d) {
     isMouseOver.value = false
-    console.log(d)
   }
 
   function onMouseMove(e: any) {
