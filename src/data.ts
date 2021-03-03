@@ -13,9 +13,9 @@ export const fetchShapes = () => {
   })
 }
 
-export const fetchData = (): Promise<Map<string, any>> => {
+export const fetchData = (fileName: string): Promise<Map<string, any>> => {
   return new Promise((resolve, reject) => {
-    csv('/data/data.csv', (err, data) => {
+    csv(`/data/${fileName}`, (err, data) => {
       if (err) {
         reject(err)
       } else {

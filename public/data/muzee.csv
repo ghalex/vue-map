@@ -1,0 +1,292 @@
+code,judet,nume
+B,Bucuresti,Muzeul Aviației
+B,Bucuresti,Muzeul George Severeanu
+B,Bucuresti,Muzeul Național de Artă
+B,Bucuresti,Muzeul Național de Geologie
+B,Bucuresti,Muzeul Național de Istorie
+B,Bucuresti,Muzeul Național de Istorie Naturală „Grigore Antipa”
+B,Bucuresti,Muzeul Satului
+B,Bucuresti,Muzeul Gheorghe Tattarescu
+B,Bucuresti,Muzeul Theodor Aman
+B,Bucuresti,Muzeul Țăranului Român
+B,Bucuresti,Muzeul Zambaccian
+B,Bucuresti,Muzeul Național Tehnic
+B,Bucuresti,Muzeul Național de Antichități (Casa Macca)
+B,Bucuresti,Muzeul Național Henri Coandă
+B,Bucuresti,Muzeul Parfumului din România
+B,Bucuresti,Muzeul Căilor Ferate
+B,Bucuresti,Expoziția muzeală STB - a transportului de călători din București
+B,Bucuresti,Muzeul Theodor Pallady
+B,Bucuresti,Muzeul de Artă Populară
+B,Bucuresti,Muzeul de Artă Veche Apuseană
+B,Bucuresti,Muzeul Universității
+B,Bucuresti,Muzeul Universității Politehnica din București
+B,Bucuresti,Muzeul Copiilor
+B,Bucuresti,Casa Experimentelor
+B,Bucuresti,Muzeul Kitschului
+B,Bucuresti,Muzeul de Artă Recentă
+AB,Alba,Muzeul Național al Unirii din Alba Iulia (MNU)
+AB,Alba,Muzeul de Artă Religioasă Reîntregirea din Alba Iulia
+AB,Alba,"Muzeul de Științe Naturale din Aiud, înființat în 1796"
+AB,Alba,Muzeul din Bistra
+AB,Alba,Complexul Muzeal Arad
+AB,Alba,"Muzeul de cofetărie ""Ioan Gui"""
+AG,Argeș,Casa Memorială Liviu Rebreanu
+AG,Argeș,Muzeul Județean Argeș
+AG,Argeș,Muzeul Etnografic din Mioveni
+AG,Argeș,Muzeul Municipal Câmpulung
+AG,Argeș,Muzeul Municipal Curtea de Argeș
+AG,Argeș,Galeria Națională de Artă Naivă
+AG,Argeș,Castrul roman Jidava
+AG,Argeș,Mausoleul de la Mateiaș
+BC,Bacău,Complexul Muzeal de Științele Naturii Ion Borcea din Bacău
+BC,Bacău,Complexul Muzeal Iulian Antonescu din Bacău
+BC,Bacău,Galeriile de Artă Ceramică „Anton Ciobanu”
+BC,Bacău,Muzeul „Casa Zamfirei”
+BH,Bihor,Muzeul Țării Crișurilor
+BH,Bihor,"Muzeul Militar, Oradea"
+BH,Bihor,Muzeul Memorial Aurel Lazăr
+BH,Bihor,Muzeul Memorial Ady Endre
+BN,Bistrița-Năsăud,Casa Memorială George Coșbuc
+BN,Bistrița-Năsăud,Muzeul Memorial Teodor Tanco
+BN,Bistrița-Năsăud,Muzeul de Artă Comparată Sângeorz-Băi
+BN,Bistrița-Năsăud,Muzeul Cuibul Visurilor din Maieru
+BN,Bistrița-Năsăud,Muzeul Grăniceresc Năsăudean din Năsăud
+BN,Bistrița-Năsăud,Muzeul Mineritului din Rodna
+BT,Botoșani,Muzeul Județean Botoșani
+BT,Botoșani,Casa memorială Mihai Eminescu de la Ipotești
+BT,Botoșani,"Colecția muzeală ,,Ioan Siminicianu”, satul Corni, comuna Corni"
+BV,Brașov,Castelul Bran
+BV,Brașov,Muzeul de Artă Brașov
+BV,Brașov,Muzeul „Casa Mureșenilor”
+BV,Brașov,Muzeul Județean de Istorie
+BV,Brașov,Muzeul „Prima scoală românească”
+BV,Brașov,Muzeul de Etnografie din Brașov
+BV,Brașov,Muzeul Civilizației Urbane Brașov
+BV,Brașov,Bastionul Graft din Brașov
+BV,Brașov,Bastionul Țesătorilor din Brașov
+BV,Brașov,"Muzeul Țării Făgărașului „Valer Literat”, din Cetatea Făgărașului"
+BV,Brașov,Muzeul Satului Brănean
+BV,Brașov,Muzeul de Etnografie Hărman
+BV,Brașov,Muzeul Vămii Medievale din Bran
+BR,Brăila,Muzeul Brăilei
+BR,Brăila,Casa Memorială „Panait Istrati”
+BR,Brăila,Casa Memorială „D. P. Perpessicius”
+BR,Brăila,"Casa Memorială ""Fănuș Neagu"""
+BZ,Buzău,Muzeul Județean Buzău
+BZ,Buzău,Muzeul Chihlimbarului din satul Colți
+CS,Caraș-Severin,Muzeul Banatului Montan
+CS,Caraș-Severin,Muzeul județean de etnografie și al regimentului de graniță
+CS,Caraș-Severin,Muzeul Locomotivelor cu Abur din Reșița
+CS,Caraș-Severin,Muzeul de Mineralogie estetică a fierului din Ocna de Fier
+CS,Caraș-Severin,Muzeul Cineastului Amator
+CL,Călărași,Muzeul Dunării de Jos
+CL,Călărași,Muzeul Civilizației Gumelnița din Oltenița
+CJ,Cluj,Muzeul Național de Istorie a Transilvaniei
+CJ,Cluj,Muzeul Etnografic al Transilvaniei
+CJ,Cluj,Palatul Bánffy (Muzeul Național de Artă)
+CJ,Cluj,Muzeul Ardelean
+CJ,Cluj,"Muzeul ""Emil Isac"" din Cluj-Napoca"
+CJ,Cluj,Muzeul Apei din Cluj-Napoca
+CT,Constanța,Muzeul Arheologic Adamclisi
+CT,Constanța,Muzeul de Istorie Națională și Arheologie
+CT,Constanța,Muzeul de Artă din Constanța
+CT,Constanța,Complexul Muzeal de știinte ale Naturii din Constanța
+CT,Constanța,"Muzeul Carsium din Hârșova,"
+CV,Covasna,Casa memorială „Romulus Cioflec” din Araci
+CV,Covasna,Muzeul Depresiunii Baraolt din Baraolt
+CV,Covasna,Colecția de Artă Plastică Cașinu Mic din Cașinu Mic
+CV,Covasna,Muzeul Etnografic „Haszmann Pál” din Cernat
+CV,Covasna,Casa Memorială „Gyárfás Jenó” din Sfântu Gheorghe
+CV,Covasna,Muzeul Național al Carpaților Răsăriteni din Sfântu Gheorghe
+CV,Covasna,Muzeul Național Secuiesc din Sfântu Gheorghe
+CV,Covasna,Muzeul Breslelor din Târgu Secuiesc
+CV,Covasna,Muzeul Etnografic Ceangăiesc din Zăbala
+CV,Covasna,Muzeul Spiritualității Românești de la Catedrala Ortodoxă din Sfântu Gheorghe (înființat in 1993)
+CV,Covasna,Muzeul Carpaților Răsăriteni
+DB,Dâmbovița,Complexul Muzeal Curtea Domnească
+DB,Dâmbovița,Muzeul de Artă
+DB,Dâmbovița,Casa Memorială Gheorghe Petrașcu
+DB,Dâmbovița,"Muzeul Tiparului și al Cărții Vechi Românești, Târgoviște"
+DB,Dâmbovița,Muzeul Scriitorilor
+DB,Dâmbovița,Muzeul Poliției
+DB,Dâmbovița,Casa Memorială Ion Luca Caragiale
+DB,Dâmbovița,Muzeul Scriitorilor Dâmbovițeni
+DB,Dâmbovița,Muzeul eclezial din Fieni
+DJ,Dolj,Casa Memorială Traian Demetrescu din Craiova
+DJ,Dolj,Muzeul „Vetre Strămoșești” din Celaru
+DJ,Dolj,Muzeul Marincu din Calafat
+DJ,Dolj,Muzeul Nisipului din Dăbuleni
+GL,Galați,Muzeul Spiritualității și Creștinătății la Dunărea de Jos]
+GL,Galați,Muzeul de Artă Vizuală din Galați
+GL,Galați,Muzeul din Tecuci
+GL,Galați,Casa „Cuza Vodă” din Galați
+GL,Galați,Muzeul de Istorie „Paul Păltănea” Galați
+GL,Galați,Muzeul de Științe Ale Naturii Galați
+GL,Galați,Casa Colecțiilor
+GL,Galați,Muzeul Filateliei și Numismaticii
+GL,Galați,Muzeul Uzina de Apă
+GR,Giurgiu,Muzeul Județean „Teohari Antonescu” din Giurgiu
+GR,Giurgiu,Muzeul Dacia din Frătești
+GR,Giurgiu,Muzeul Episcopiei Giurgiului
+GR,Giurgiu,Muzeul de artă și tehnică populară din Vânătorii Mici
+GJ,Gorj,Muzeul Județean Gorj „Alexandru Ștefulescu” din Târgu Jiu
+GJ,Gorj,Muzeul Tezaurului de la Tismana
+HR,Harghita,Muzeului Secuiesc al Ciucului din Castelul Mikó din Miercurea Ciuc
+HR,Harghita,Muzeul Oltului și al Mureșului Superior din Miercurea Ciuc
+HR,Harghita,Muzeul Apelor Minerale din Tușnad
+HR,Harghita,Muzeul Orășenesc „Molnár István” din Cristuru Secuiesc
+HR,Harghita,"Colecția muzeală a Mănăstirii ""Sf. Ilie"" de la Toplița"
+HR,Harghita,Muzeul de Etnografie Toplița
+HR,Harghita,"Muzeul pălăriilor de paie din Crișeni, înființat de către Szocs Lajos [53]"
+HR,Harghita,Colecția muzeală sătească Corund din Corund
+HR,Harghita,Colecția muzeală sătească Praid din Praid
+HR,Harghita,Casa Memorială „Nagy Imre” din Jigodin Băi
+HR,Harghita,Casă etnografică ceangăiască Păltiniș-Ciuc din Păltiniș-Ciuc
+HD,Hunedoara,"Castelul Corvinilor, din Hunedoara"
+HD,Hunedoara,"Muzeul Civilizației Dacice și Romane, din Deva"
+HD,Hunedoara,Muzeul de Arheologie Sarmizegetusa
+HD,Hunedoara,"Muzeul de Etnografie și Artă Populară, din Orăștie"
+HD,Hunedoara,"Muzeul de Etnografie și Artă Populară Zărăndeană, din Brad"
+HD,Hunedoara,"Muzeul Memorial „Aurel Vlaicu”, din satul Aurel Vlaicu"
+HD,Hunedoara,Muzeul Aurului din Brad
+HD,Hunedoara,"Muzeul Pădurenilor, din Poienița Voinii organizat în casa regretatului cântăreț de muzică populară Drăgan Muntean"
+HD,Hunedoara,"Muzeul Textilelor, din Băița"
+HD,Hunedoara,"Casa natală Crișan (Marcu Giurgiu), din Crișan"
+IS,Iași,Muzeul de Istorie a Moldovei
+IS,Iași,Muzeul Științei și Tehnicii „Ștefan Procopiu”
+IS,Iași,Muzeul Etnografic al Moldovei
+IS,Iași,Muzeul de Artă
+IS,Iași,Muzeul „Mihai Eminescu”
+IS,Iași,Muzeul de soluri de la USAMV Iași
+IS,Iași,"Muzeul de Istorie Naturală, Iași"
+IS,Iași,"Muzeul Municipal, Iași"
+IS,Iași,"Muzeul Universității „Al. I. Cuza”, Iași"
+IS,Iași,"Muzeul Sitului Arheologic Cucuteni, sat Cucuteni, șoseaua Iași-Pașcani, comuna Cucuteni"
+IS,Iași,"Muzeul Viei și Vinului, Hârlău"
+IS,Iași,"Muzeul „Alexandru Ioan Cuza”, sat Ruginoasa, comuna Ruginoasa"
+IL,Ialomița,Muzeul Național al Agriculturii din Slobozia
+IL,Ialomița,Muzeul Județean de Istorie Ialomița
+MM,Maramureș,Muzeul Județean de Artă «Centrul Artistic Baia Mare» din Baia Mare [67]
+MM,Maramureș,Muzeul satului din Baia Mare
+MM,Maramureș,Muzeul Țărăncii Române din Dragomirești
+MM,Maramureș,"Ansamblul Muzeal și Monumental ""Dr. Vasile Lucaciu"" din Șișești"
+MS,Mureș,Muzeul Județean Mureș
+MS,Mureș,Muzeul de Etnografie și Arta Populară din Târgu Mureș
+MS,Mureș,Muzeul de Științele Naturii din Târgu Mureș
+MS,Mureș,Muzeul Bolyai
+MS,Mureș,Muzeul Municipal Târnăveni
+MS,Mureș,Muzeul de Istorie din Sighișoara
+MS,Mureș,Muzeul Sașilor din Reghin
+MS,Mureș,Muzeul Etnografic din Reghin
+NT,Neamț,Muzeul de Istorie și Arheologie Piatra Neamț
+NT,Neamț,Muzeul de Artă din Piatra-Neamț
+NT,Neamț,Muzeul de Etnografie din Piatra-Neamț
+NT,Neamț,Muzeul de Științe Naturale din Piatra-Neamț
+NT,Neamț,Muzeul Memorial „Calistrat Hogaș” din Piatra Neamț
+NT,Neamț,Muzeul de Artă Eneolitică Cucuteni din Piatra Neamț
+NT,Neamț,Muzeul de Istorie din Roman din Roman
+NT,Neamț,Muzeul de Artă din Roman
+NT,Neamț,Muzeul de Științe Naturale din Roman
+NT,Neamț,Muzeul Parohial Pipirig din Pipirig[
+NT,Neamț,Muzeul Popa din Târpești
+OT,Olt,Muzeul Județean Olt
+PH,Prahova,Muzeul Cinegetic al Carpaților de la Posada
+PH,Prahova,Muzeul Memorial Cezar Petrescu din Bușteni
+PH,Prahova,Muzeul Casă de Târgoveț din secolele XVIII-lea al XIX-lea din Ploiești
+PH,Prahova,Muzeul Național Peleș din Sinaia
+PH,Prahova,Muzeul Județean al Științelor Naturii Prahova
+PH,Prahova,Muzeul Memorial Constantin și Ion Stere din Bucov
+PH,Prahova,Muzeul Natura Văii Teleajenului din Vălenii de Munte
+PH,Prahova,Muzeul Ceasului din Ploiești
+PH,Prahova,Muzeul Casa Domnească din Brebu
+PH,Prahova,Muzeul Național al Petrolului din Ploiești
+PH,Prahova,Muzeul Crama 1777 din Valea Călugărească
+PH,Prahova,Muzeul Memorial Paul Constantinescu din Ploiești
+PH,Prahova,Muzeul de Științele Naturii din Sinaia
+PH,Prahova,Muzeul Sării din Slănic Prahova
+PH,Prahova,Muzeul de Artă Religioasă Nicolae Iorga din Vălenii de munte
+PH,Prahova,Muzeul Memorial Nichita Stănescu din Ploiești
+PH,Prahova,Muzeul Pietrei din Sângeru
+PH,Prahova,Muzeul Ion Luca Caragiale
+SM,Satu Mare,Muzeul județean Satu Mare
+SM,Satu Mare,Muzeul ceramicii-Vama
+SJ,Sălaj,Muzeul Holocaustului din Șimleu Silvaniei
+SB,Sibiu,Muzeul Brukenthal
+SB,Sibiu,Muzeul de Istorie din Sibiu
+SB,Sibiu,Muzeul de Istorie Naturală din Sibiu
+SB,Sibiu,Muzeul „Astra” din Sibiu
+SB,Sibiu,Muzeul Civilizației Populare Tradiționale ASTRA
+SB,Sibiu,Muzeul Civilizației Transilvane „ASTRA” din Sibiu
+SB,Sibiu,"Muzeul de etnografie universală ""Franz Binder"""
+SB,Sibiu,Muzeul de etnografie și artă populară săsească „Emil Sigerus”
+SB,Sibiu,Muzeul Farmaciei din Sibiu
+SB,Sibiu,Muzeul Locomotivelor cu Aburi
+SB,Sibiu,Muzeul de Arme și Trofee de Vânătoare
+SB,Sibiu,Casa Artelor din Sibiu
+SB,Sibiu,"Colecția Muzeală a Armenilor din Transilvania din Dumbrăveni, jud. Sibiu"
+SB,Sibiu,Casa Memorială Dr. Gheorghe Telea din Nou Român
+SB,Sibiu,Muzeul Parohial din Săliște
+SV,Suceava,Muzeul Bucovinei
+SV,Suceava,Muzeul Satului Bucovinean
+SV,Suceava,Muzeul de Istorie din Suceava
+SV,Suceava,Muzeul Etnografic „Hanul Domnesc” din Suceava
+SV,Suceava,Muzeul de Științele Naturii din Suceava
+SV,Suceava,Casa memorială „Simion Florea Marian” din Suceava
+SV,Suceava,Planetariul din Suceava
+SV,Suceava,Muzeul de Artă „Ion Irimescu” din Fălticeni
+SV,Suceava,Muzeul Apelor „Mihai Băcescu” din Fălticeni
+SV,Suceava,Galeria Oamenilor de Seamă din Fălticeni
+SV,Suceava,Casa memorială „Mihail Sadoveanu” din Fălticeni
+SV,Suceava,Muzeul de Etnografie „Samuil și Eugenia Ioneț” din Rădăuți
+SV,Suceava,Muzeul „Arta Lemnului” din Câmpulung Moldovenesc
+SV,Suceava,Muzeul Lingurilor de Lemn „Ioan Țugui” din Câmpulung Moldovenesc
+SV,Suceava,Muzeul Etnografic „Ioan Grămadă” din Câmpulung Moldovenesc
+SV,Suceava,Muzeul de Științele Naturii și Cinegetică din Vatra Dornei
+SV,Suceava,Muzeul de Etnografie din Vatra Dornei
+SV,Suceava,Muzeul de Istorie din Siret
+SV,Suceava,Casa memorială „Ciprian Porumbescu” din Stupca
+SV,Suceava,Casa memorială „Nicolae Labiș” din Mălini
+SV,Suceava,Casa memorială „Eusebiu Camilar” din Udești
+SV,Suceava,Casa memorială „Ion Nistor” din Bivolărie (Vicovu de Sus)
+SV,Suceava,Casa-muzeu Solca (Casa „Saveta Cotrubaș” din Solca)
+SV,Suceava,Casa-muzeu Bilca (Casa „George Muntean” din Bilca)
+SV,Suceava,Muzeul Ouălor Încondeiate „Lucia Condrea” din Moldovița
+SV,Suceava,Muzeul Satului din Moldovița
+SV,Suceava,Muzeul Național al Ouălor Încondeiate din Ciocănești
+TM,Timiș,Muzeul de Artă Timișoara
+TM,Timiș,Muzeul Banatului
+TM,Timiș,Muzeul Satului Bănățean
+TM,Timiș,Muzeul Militar din Timișoara
+TM,Timiș,Muzeul de Istorie din Recaș
+TM,Timiș,Expoziția Memorială „Béla Bártok”
+TM,Timiș,Expoziția Memorială „Ștefan Jäger”
+TM,Timiș,Expoziția Memorială „Traian Vuia”
+TM,Timiș,Galeria Calina
+TM,Timiș,"Muzeul presei ""Petre Stoica"" din orasul Jimbolia"
+TM,Timiș,Muzeul „Nicholaus Lenau” din comuna Lenauheim
+TM,Timiș,Muzeul Consumatorului Comunist din Timișoara
+TL,Tulcea,"Muzeul de Artă Orientală, Babadag"
+TL,Tulcea,"Casa Memorială „Panait Cerna”, Cerna"
+TL,Tulcea,"Muzeul Satului Nord Dobrogean de la Enisala, Enisala"
+TL,Tulcea,Colecția muzeală a Mănăstirii Ortodoxe „Cocoș”
+TL,Tulcea,"Monumentul paleocreștin, Niculițel"
+TL,Tulcea,Colecția muzeală a Mănăstirii Ortodoxe Çelik-Dere
+TL,Tulcea,Muzeul „Farul Sulinei” [105]
+TL,Tulcea,"Centrul Ecoturistic „Delta Dunării”, Tulcea"
+TL,Tulcea,"Institutul de Cercetări Eco-Muzeale, Tulcea"
+TL,Tulcea,"Muzeul de Artă, Tulcea"
+TL,Tulcea,"Muzeul de Etnografie și Artă Populară, Tulcea"
+TL,Tulcea,"Muzeul de Istorie și Arheologie, Tulcea"
+VS,Vaslui,Muzeul Ștefan cel Mare din Vaslui
+VS,Vaslui,Muzeul „Vasile Pârvan” din Bârlad
+VS,Vaslui,Muzeul Municipal din Huși
+VS,Vaslui,Muzeul „Casa Amintirilor” din Arsura
+VL,Vâlcea,"Muzeul Satului Vâlcean, Bujoreni"
+VL,Vâlcea,Muzeul Trovanților
+VL,Vâlcea,Complexul Muzeal Măldărești din Comuna Măldărești
+VL,Vâlcea,Casa Memoriala Anton Pann din Rm. Valcea
+VL,Vâlcea,Muzeul de Istorie a Judetului Valcea
+VL,Vâlcea,Muzeul de Arta Casa Simian din Rm. Valcea
+VL,Vâlcea,"Muzeul Viei si Vinului, Dragasani"
+VL,Vâlcea,Muzeul Memorial „Nicolae Bălcescu” din comuna Nicolae Bălcescu

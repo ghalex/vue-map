@@ -1,5 +1,5 @@
 <template>
-  <div class="map">
+  <div class="map" ref="map">
     <svg :width="width" :height="height" ref="svg" @click="onClickOutside">
       <g>
         <g
@@ -48,6 +48,7 @@ import { computed, onMounted, provide, ref, watch } from 'vue'
 import { geoMercator, geoPath } from 'd3-geo'
 import { fetchShapes } from '@/data'
 import { pointer, select } from 'd3-selection'
+import { useOnOutsidePress } from 'vue-composable'
 import { zoom } from 'd3-zoom'
 
 export default {
@@ -67,6 +68,7 @@ export default {
     }
   },
   setup(props) {
+    const map = ref(null)
     const svg = ref(null)
     const shapes = ref([] as any)
     const transform = ref('')
@@ -100,7 +102,6 @@ export default {
       .on('zoom', (e) => {
         const { x, y, k } = e.transform
         transform.value = `translate(${x}, ${y}) scale(${k})`
-        clickData.value = null
       })
 
     provide('svg', svg)
@@ -147,6 +148,8 @@ export default {
       updateProjection(props.width, props.height)
     })
 
+    useOnOutsidePress(map, onClickOutside)
+
     watch(props, () => {
       updateProjection(props.width, props.height)
     })
@@ -157,7 +160,7 @@ export default {
       }
     })
 
-    return { svg, paths, transform, onMouseMove, onMouseOut, onMouseOver, onMouseClick, onClickOutside }
+    return { map, svg, paths, transform, onMouseMove, onMouseOut, onMouseOver, onMouseClick, onClickOutside }
   }
 }
 </script>
