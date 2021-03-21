@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="flex flex-col items-center justify-center p-8">
-      <div>
+      <!-- <div>
         <h2 class="text-4xl mb-2 text-gray-800">Harta Romania</h2>
-      </div>
+      </div> -->
       <div class="">
         <div class="toolbar flex w-full py-2 justify-center">
           <div
@@ -22,20 +22,33 @@
               <ZoomWidget />
               <PopupWidget>
                 <template #default="p">
-                  <div class="overflow-hidden" v-if="data.get(p.data.code)">
-                    <div class="bg-green-300 rounded-t text-gray-800 px-2 py-2 font-bold">
-                      {{ p.data.name }} ({{ data.get(p.data.code).length }} {{ tabs[tab].toLowerCase() }})
+                  <div v-if="tab !== 2">
+                    <div class="overflow-hidden" v-if="data.get(p.data.code)">
+                      <div class="bg-green-300 rounded-t text-gray-800 px-2 py-2 font-bold">
+                        {{ p.data.name }} ({{ data.get(p.data.code).length }} {{ tabs[tab].toLowerCase() }})
+                      </div>
+                      <ul class="maxH list-inside list-decimal p-2 text-gray-800">
+                        <li v-for="(item, i) in data.get(p.data.code)" :key="i">{{ item.nume }}</li>
+                      </ul>
                     </div>
-                    <ul class="maxH list-inside list-decimal p-2 text-gray-800">
-                      <li v-for="(item, i) in data.get(p.data.code)" :key="i">{{ item.nume }}</li>
-                    </ul>
+                    <div v-else>
+                      <div class="bg-green-300 rounded-t text-gray-800 px-2 py-2 font-bold">
+                        {{ p.data.name }}
+                      </div>
+                      <ul class="maxH list-inside list-decimal p-2">
+                        Nu avem date
+                      </ul>
+                    </div>
                   </div>
                   <div v-else>
                     <div class="bg-green-300 rounded-t text-gray-800 px-2 py-2 font-bold">
                       {{ p.data.name }}
                     </div>
                     <ul class="maxH list-inside list-decimal p-2">
-                      Nu avem date
+                      {{
+                        data.get(p.data.code)
+                      }}
+                      monumente
                     </ul>
                   </div>
                 </template>
@@ -56,9 +69,13 @@
       </div>
       <div class="mt-2">
         Data source:
-        <a class="text-orange-600" href="https://ro.wikipedia.org/wiki/Lista_monumentelor_istorice_din_Rom%C3%A2nia"
-          >Wikipedia</a
-        >
+        <a class="text-orange-600" href="https://ro.wikipedia.org/wiki/Lista_monumentelor_istorice_din_Rom%C3%A2nia">
+          Wikipedia
+        </a>
+        &
+        <a class="text-orange-600" href="https://art-gift.ro/">
+          Art-Gift.ro
+        </a>
       </div>
     </div>
   </div>
@@ -108,7 +125,15 @@ export default {
 
       const extra = data.value.get(properties.code)
       if (extra) {
-        return scale(extra.length)
+        switch (tab.value) {
+          // monumente
+          case 2: {
+            return scale(extra)
+          }
+
+          default:
+            return scale(extra.length)
+        }
       }
 
       return '#CCC'
@@ -118,12 +143,19 @@ export default {
       data.value = d
       domain.value = extent(
         Array.from(d.entries()).map(([key, arr]) => {
-          if (tab.value === 2) {
-            return arr.length
+          switch (tab.value) {
+            // monumente
+            case 2: {
+              return key === 'B' ? 0 : arr
+            }
+
+            default:
+              return key === 'IF' ? 0 : arr.length
           }
-          return key === 'IF' ? 0 : arr.length
         })
       ) as any
+
+      console.log(domain.value)
 
       scale = scaleQuantize()
         .domain(domain.value)
@@ -143,8 +175,8 @@ export default {
       loading.value = true
 
       try {
-        cach.artisti = await fetchData('artisti.csv')
-        cach.muzee = await fetchData('muzee.csv')
+        cach.artisti = await fetchData('artisti.csv', 'code')
+        cach.muzee = await fetchData('muzee.csv', 'code')
         cach.monumente = await fetchData('monumente.csv')
 
         changeData(cach.artisti)

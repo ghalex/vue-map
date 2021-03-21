@@ -25,11 +25,21 @@ B,Bucuresti,Muzeul Copiilor
 B,Bucuresti,Casa Experimentelor
 B,Bucuresti,Muzeul Kitschului
 B,Bucuresti,Muzeul de Artă Recentă
+IF,Ilfov,Centrul de Cultură „Palatele Brâncovenești de la Porțile Bucureștiului”
+IF,Ilfov,Țiriac Collection
 AB,Alba,Muzeul Național al Unirii din Alba Iulia (MNU)
 AB,Alba,Muzeul de Artă Religioasă Reîntregirea din Alba Iulia
 AB,Alba,"Muzeul de Științe Naturale din Aiud, înființat în 1796"
 AB,Alba,Muzeul din Bistra
-AB,Alba,Complexul Muzeal Arad
+AR,Arad,Complexul Muzeal Arad
+AR,Arad,Muzeul Comunei Săvârșin
+AR,Arad,Muzeul de Artă din Arad
+AR,Arad,Muzeul Memorial „Ioan Slavici și Emil Monția”
+AR,Arad,Muzeul Orășenesc Lipova
+AR,Arad,Muzeul Viei și Vinului din Miniș
+AR,Arad,Expoziția Memorială „Adam Müller-Guttenbrunn”
+AR,Arad,"Colecția de Istorie a Teatrului, Muzicii și Cinematografului „Iosif Sârbuț"""
+AR,Arad,Colecția de Carte Veche și Icoane „Ștefan Crișan”
 AB,Alba,"Muzeul de cofetărie ""Ioan Gui"""
 AG,Argeș,Casa Memorială Liviu Rebreanu
 AG,Argeș,Muzeul Județean Argeș
@@ -167,6 +177,9 @@ IS,Iași,"Muzeul Viei și Vinului, Hârlău"
 IS,Iași,"Muzeul „Alexandru Ioan Cuza”, sat Ruginoasa, comuna Ruginoasa"
 IL,Ialomița,Muzeul Național al Agriculturii din Slobozia
 IL,Ialomița,Muzeul Județean de Istorie Ialomița
+MH,Mehedinți,Muzeul de Artă din Drobeta-Turnu Severin
+MH,Mehedinți,Muzeul Regiunii Porților de Fier
+MH,Mehedinți,Expoziția „Hidrocentrala Porțile de Fier”
 MM,Maramureș,Muzeul Județean de Artă «Centrul Artistic Baia Mare» din Baia Mare [67]
 MM,Maramureș,Muzeul satului din Baia Mare
 MM,Maramureș,Muzeul Țărăncii Române din Dragomirești
@@ -266,6 +279,7 @@ TM,Timiș,Galeria Calina
 TM,Timiș,"Muzeul presei ""Petre Stoica"" din orasul Jimbolia"
 TM,Timiș,Muzeul „Nicholaus Lenau” din comuna Lenauheim
 TM,Timiș,Muzeul Consumatorului Comunist din Timișoara
+TR,Teleorman,Muzeul Județean Teleorman
 TL,Tulcea,"Muzeul de Artă Orientală, Babadag"
 TL,Tulcea,"Casa Memorială „Panait Cerna”, Cerna"
 TL,Tulcea,"Muzeul Satului Nord Dobrogean de la Enisala, Enisala"
@@ -290,3 +304,7 @@ VL,Vâlcea,Muzeul de Istorie a Judetului Valcea
 VL,Vâlcea,Muzeul de Arta Casa Simian din Rm. Valcea
 VL,Vâlcea,"Muzeul Viei si Vinului, Dragasani"
 VL,Vâlcea,Muzeul Memorial „Nicolae Bălcescu” din comuna Nicolae Bălcescu
+VN,Vrancea,Mausoleul de la Mărăști
+VN,Vrancea,Mausoleul și Muzeul Soveja
+VN,Vrancea,Muzeul Memorial „Alexandru Vlahuță”
+VN,Vrancea,Muzeul Vrancei

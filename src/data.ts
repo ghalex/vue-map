@@ -13,14 +13,23 @@ export const fetchShapes = () => {
   })
 }
 
-export const fetchData = (fileName: string): Promise<Map<string, any>> => {
+export const fetchData = (fileName: string, groupBy?: string): Promise<Map<string, any>> => {
   return new Promise((resolve, reject) => {
     csv(`/data/${fileName}`, (err, data) => {
       if (err) {
         reject(err)
       } else {
-        const result = group(data, (d) => d.code) as Map<string, any>
-        resolve(result)
+        if (groupBy) {
+          const result = group(data, (d) => d.code) as Map<string, any>
+          resolve(result)
+        } else {
+          const result = new Map()
+          for (const d of data) {
+            result.set(d.code, parseInt(d.monumente?.toString() || '0'))
+          }
+
+          resolve(result)
+        }
       }
     })
   })
