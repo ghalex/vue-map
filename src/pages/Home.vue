@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-col items-center justify-center p-8">
+    <div class="flex flex-col items-center justify-center">
       <!-- <div>
         <h2 class="text-4xl mb-2 text-gray-800">Harta Romania</h2>
       </div> -->
